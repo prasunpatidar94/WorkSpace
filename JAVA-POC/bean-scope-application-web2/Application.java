@@ -1,0 +1,3 @@
+@Sprin
+public class Application {
+}

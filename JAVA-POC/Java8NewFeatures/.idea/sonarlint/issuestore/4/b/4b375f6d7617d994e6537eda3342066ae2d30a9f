@@ -1,0 +1,8 @@
+
+[
+java:S2184"ECast one of the operands of this subtraction operation to a "double".(£’ÂÊ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ý¼ÏÊ
+Q	java:S125"<This block of commented-out lines of code should be removed.(õ‚Ñ°
+V	java:S125"<This block of commented-out lines of code should be removed.(®¹˜éÿÿÿÿÿ
+W
+java:S1126"AReplace this if-then-else statement by a single return statement.(öç³µ

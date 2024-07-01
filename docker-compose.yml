@@ -1,0 +1,46 @@
+version: '3.7'
+
+services:
+    backend-first:
+        #image: spring-docker-compose:v0.1
+        build:
+            context: boot-docker-mysql-image
+            dockerfile: Dockerfile.txt
+        ports:
+            - "8080:8080"
+        restart: always
+        depends_on:
+            - db
+        networks:
+            - two-boot-docker-compose
+    backend-second:
+       # image: spring-docker-compose-second:v0.1
+        build:
+            context: docker-test-war
+            dockerfile: Dockerfile.txt
+        ports:
+            - "8585:8080"
+        restart: always
+        #depends_on:
+           # - backend-second
+        networks:
+            - two-boot-docker-compose
+    db:
+        image: mysql:8
+        ports:
+          - "3306:3306"
+        restart: always
+        environment:
+          MYSQL_DATABASE: test
+          MYSQL_USER: prasun
+          MYSQL_PASSWORD: test
+          MYSQL_ROOT_PASSWORD: root
+        volumes:
+          - db-data:/var/lib/mysql
+        networks:
+          - two-boot-docker-compose
+volumes:
+    db-data:
+    
+networks:
+    two-boot-docker-compose:

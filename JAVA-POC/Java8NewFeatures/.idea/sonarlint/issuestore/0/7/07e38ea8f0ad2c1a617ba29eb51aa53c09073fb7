@@ -1,0 +1,19 @@
+
+]
+java:S3973"GUse indentation to denote the code conditionally executed by this "if".(€ÚΩÀ
+V	java:S125"<This block of commented-out lines of code should be removed.(”¿¬˘˚ˇˇˇˇ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¯øÏù˛ˇˇˇˇ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(à∑ªÛ˘ˇˇˇˇ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ﬂ®Â≠
+@
+java:S5869 "*Remove duplicates in this character class.(®ÒÅ√
+K
+java:S6397 "5Replace this character class by the character itself.(®ÒÅ√
+\
+java:S1126""AReplace this if-then-else statement by a single return statement.(êﬂò•¯ˇˇˇˇ
+H
+java:S1128"-Remove this unused import 'java.util.Arrays'.(Óñò…¸ˇˇˇˇ
+F
+java:S1128"+Remove this unused import 'java.util.List'.(’Î±ƒ¯ˇˇˇˇ
+S
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(”Û∫¥˙ˇˇˇˇ

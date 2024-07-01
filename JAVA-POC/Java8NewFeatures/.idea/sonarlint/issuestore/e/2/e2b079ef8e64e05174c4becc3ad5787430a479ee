@@ -1,0 +1,15 @@
+
+`	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+`	java:S112E"FDefine and throw a dedicated exception instead of using a generic one.(¯åÕøÿÿÿÿ
+W
+java:S1075
+"ARefactor your code to get this URI from a customizable parameter.(¼µçı
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÖĞ ÷
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(æ–£Şşÿÿÿÿ
+Q	java:S125!"<This block of commented-out lines of code should be removed.(Ä –‰
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(•¡³“
+N	java:S106,"9Replace this use of System.out or System.err by a logger.(•¡³“
+N	java:S1067"9Replace this use of System.out or System.err by a logger.(€¢ê¢
+Q	java:S125?"<This block of commented-out lines of code should be removed.(Ä –‰
+N	java:S106D"9Replace this use of System.out or System.err by a logger.(€¢ê¢
+i	java:S116R"ORename this field "Name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¬­Áøÿÿÿÿ

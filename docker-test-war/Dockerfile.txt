@@ -1,0 +1,21 @@
+FROM tomcat:9-jre11
+EXPOSE 8080
+RUN rm -rf /usr/local/tomcat/webapps/*
+COPY target/*.war /usr/local/tomcat/webapps/ROOT.war
+CMD ["catalina.sh","run"]
+#=========================================================
+
+
+#FROM docker pull maven:openjdk-11 as Backend-build
+#WORKDIR /sun/backend
+#COPY pom.xml .
+#RUN mvn dependency:go-offline -B
+#COPY src src
+#RUN clean install -DskipTests
+#RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
+
+#FROM tomcat:9-jre11
+#EXPOSE 8080
+#RUN rm -rf /usr/local/tomcat/webapps/*
+#COPY Backend-build/*.war /usr/local/tomcat/webapps/ROOT.war
+#CMD ["catalina.sh","run"]

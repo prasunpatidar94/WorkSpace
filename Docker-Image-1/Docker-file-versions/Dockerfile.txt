@@ -1,0 +1,23 @@
+
+# For Java 8, try this
+#FROM openjdk:8-jdk-alpine
+
+# For Java 11, try this
+#docker pull adoptopenjdk/openjdk11
+FROM adoptopenjdk/openjdk11
+
+
+# Refer to Maven build -> finalName
+#ARG JAR_FILE=target/docker-test-one.jar
+
+# cd /opt/app
+#WORKDIR /opt/app
+
+# cp maven/spring-boot-web.jar /opt/app/app.jar
+ADD target/*.jar app.jar
+
+# to expose metadata
+EXPOSE 8080
+
+# java -jar /opt/app/app.jar
+ENTRYPOINT ["sh","-c","java -jar app.jar"]
